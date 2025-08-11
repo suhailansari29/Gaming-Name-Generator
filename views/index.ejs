@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Gaming Name Generator</title>
+</head>
+<body>
+    <div id="outer" align="center">
+    <% if (locals.name) { %>
+        <h1><%= name %></h1>  
+    <% } else { %>
+        <h1>CLICK TO GENERATE GAMING NAME 👇</h1>
+    <% } %>
+    <form action="/submit" method="post">
+    </br>
+    <input type="submit" value="Click"/>
+    </form>
+    </div>
+
+    <footer>Copyright &copy; <%= yr %></footer>
+</body>
+</html>
